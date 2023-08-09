@@ -35,3 +35,12 @@ with sns.axes_style('whitegrid'):
     grafico.set(title='Preço da Gasolina por dia', xlabel='Dia', ylabel='Preço')
 
     plt.savefig("gasolina.png")
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+with sns.axes_style('whitegrid'):
+    grafico = sns.lineplot(data=gasolina_df, x='dia', y='venda')
+    grafico.set(title='Preço da Gasolina por dia', xlabel='Dia', ylabel='Preço')
+
+plt.savefig("gasolina.png")
